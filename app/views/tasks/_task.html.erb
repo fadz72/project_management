@@ -4,13 +4,13 @@
 		<% if task.completed? %>
 			<div class= "complete">
 				<%= link_to complete_project_task_path(@project, task.id), method: :patch do %>
-						<i style="opacity:0.4;" class="fa fa-check"></i>
+						<i style="opacity: 0,4;" class="fa fa-check"></i>
 				<% end %>
 			</div>
 
 
 			<div class = "todo_item">
-				<p style="opacity: 0.4;"<strike><%= task.content %></strike></p>
+				<p style="opacity: 0.4;"><strike><%= task.content %></strike></p>
 			</div>
 
 			<div class = "trash">
